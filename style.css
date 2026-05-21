@@ -1,0 +1,132 @@
+:root {
+    --primary-bg-color: #0d0d0e;
+    --dark-bg-color: #202225;
+    --dark-bg-color-hover: #5e646d;
+    --primary-accent-color: #4bf3ff;
+    --primary-accent-color-hover: #37b9c2;
+    --secondary-accent-color: #7b4bff;
+
+
+    --primary-font-color: #4bf3ff;
+    --primary-font-size: 21px;
+    --big-font-size: 26px;
+    --small-font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 15px;
+    background-color: var(--dark-bg-color);
+    text-align: left;
+    font-size: var(--big-font-size);
+    color: var(--primary-font-color);
+}
+
+header h1{
+    font-size: var(--big-font-size);
+    color: var(--primary-font-color);
+}
+
+body {
+    background-image: url("/images/grid.png");
+    background-color: var(--primary-bg-color);
+    background-repeat: repeat;
+    background-size: 7%;
+    background-attachment: fixed;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+#static-card-container {
+    display: flex;
+    justify-content: center;
+}
+
+#movable-card-container {
+    width: 100%;
+    height: 700px;
+    border: 2px solid red;
+}
+
+.card {
+    background-color: var(--dark-bg-color);
+    border: 3px solid var(--primary-accent-color);
+    border-radius: 8px;
+    padding: 28px;
+    text-align: center;
+    font-size: var(--primary-font-size);
+    z-index: 0;
+    color: var(--primary-font-color);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testCard {
+    width: 200px;
+    margin-top: 8%;
+}
+
+.movable {
+    position: absolute;
+    cursor: grab;
+}
+
+.static {
+    border: 3px solid var(--secondary-accent-color);
+}
+
+#main-card {
+    width: 200px;
+    margin-top: 8%;
+}
+
+#card-1 {
+    width: 200px;
+}
+
+#cat-image {
+    width: 30%;
+    border-radius: 8px;
+    user-select: none;
+}
+
+#inspirocard {
+    min-height: 110px;
+    max-width: 400px;
+    padding: 30px;
+}
+
+#inspirocard img {
+    width: 90%;
+    border-radius: 8px;
+}
+
+#inspirocard button{
+    background-color: var(--primary-accent-color);
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: var(--big-font-size);
+    color: var(--dark-bg-color);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+#inspirocard button:hover{
+    background-color: var(--primary-accent-color-hover);
+}
