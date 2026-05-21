@@ -3,6 +3,7 @@ const inspirocardImage = document.getElementById('inspirocard-image');
 
 inspirocardButton.addEventListener('click', async (e) => {
     inspirocardImage.src = await getImage();
+    inspirocardButton.style.marginTop = "20px";
 });
 
 async function getImage() {
